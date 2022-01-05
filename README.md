@@ -7,3 +7,6 @@ Unlike the default templates in VS, this template comes with EF Core, repository
 With just a hand full of small changes it can be refactored to custom needs and remains operational.
 
 It does, however, not contain generic implementations (not required right now).
+
+**How to use**
+Donwload and place in your local template folder. Select the template when creating a new project.
