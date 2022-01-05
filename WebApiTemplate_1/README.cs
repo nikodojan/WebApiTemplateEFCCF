@@ -8,7 +8,7 @@ namespace WebApiTemplateV1
 {
     public class README
     {
-        // ASP.NET Web API with EF Core CF - Latest update: 03.01.2022, 20:10 - V.0.202201032010
+        // ASP.NET Web API with EF Core CF - Latest update: 05.01.2022, 19:10 - V.0.202201051910
 
         // This class is for documentation purposes only and should be deleted after applying all changes.
         // This project is a basic template to implement a WebApi with repository pattern.
@@ -18,8 +18,17 @@ namespace WebApiTemplateV1
         // Manager class: ItemsManager
         // Api controller: ItemsController
 
-        // !!! For renaming use the build in renaming or refactoring functions. Do not simply delete the old and write new name.
+        // !!! For renaming use the build-in renaming or refactoring functions. Do not simply delete the old and write new name.
         // This file contains references to the rYou can use the references to the classes/types in this file by clicking on the type name (e.g. Item) and using CTRL+R,R
+
+        // In case you want to use the manager and controller with a model class from an external class library,
+        // there are some more steps.
+        // You should be begin with renaming the existing classes to the required name.
+        // Then delete the model class in the Models folder. This will result in compile errors.
+        // Now add a project reference to the class library.
+        // Import the namespace with model class in the class library in DbContext, manager and controller.
+        // Use either potential fixes function of VS or add using ClassLibraryNameSpace;
+        // Delete namespace of previous model class.
 
         // Item - Model class with one property
         // TODO: Use the refactoring/renaming function of the IDE to rename the model to whatever your model is supposed to be, e.g. Book.
